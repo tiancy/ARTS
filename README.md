@@ -1,2 +1,6 @@
 # ARTS
-ARST is an activity about algorithm, review, technique and share.
+
+Algorithm  - Learning Algorithm<br/>
+Review  - Learning English<br/>
+Tip - Learning Techniques<br/>
+Share - Learning Influence<br/>
