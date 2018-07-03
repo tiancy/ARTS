@@ -1,5 +1,9 @@
 # Tip
 
+*  cmd native2ascii -reverse filepath 
+
+[native2ascii](https://native2ascii.net) Convert national language characters to and from their Unicode equivalents in plain ASCII text.
+
 *  Required Storage and Range for Integer Types Supported by MySQL
 
 | Type | Storage (Bytes) | Minimum Value Signed |	Minimum Value Unsigned | Maximum Value Signed	| Maximum Value Unsigned |
