@@ -2,6 +2,20 @@
 
 ### [spring-boot hotswapping](https://docs.spring.io/spring-boot/docs/current/reference/html/howto-hotswapping.html)
 
+Maven
+```
+<dependencies>
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-devtools</artifactId>
+		<optional>true</optional>
+	</dependency>
+</dependencies>
+```
+
+Developer tools are automatically disabled when running a fully packaged application.
+Repackaged archives do not contain devtools by default.
+
 ### [mybatis #{name} vs ${name}](http://www.mybatis.org/mybatis-3/sqlmap-xml.html#select)
 
 ### mybatis like
