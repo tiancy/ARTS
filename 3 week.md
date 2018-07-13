@@ -18,9 +18,11 @@ Mac Setup
 
 If key repeating isn't working for you, execute this in your Terminal, then restart VS Code.
 
-* defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false         _For VS Code_
-* defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false _For VS Code Insider_
-* defaults delete -g ApplePressAndHoldEnabled                                      _If necessary, reset global default_
+```cmd
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false         # For VS Code
+defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false # For VS Code Insider
+defaults delete -g ApplePressAndHoldEnabled                                      # If necessary, reset global default
+```
 
 We also recommend going into System Preferences -> Keyboard and increasing the Key Repeat and Delay Until Repeat settings to improve your speed.
 
