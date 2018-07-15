@@ -121,6 +121,16 @@ func main() {
 }
 ```
 
+
+# Review
+
+[How I Fully Quit Google (And You Can, Too)](https://medium.com/s/story/how-i-fully-quit-google-and-you-can-too-4c2f3f85793a)
+
+I like Google, but the world just that... 
+
+We Reflection, We Change!
+
+
 # Tip
 
 ## cmd native2ascii -reverse filepath 
@@ -131,11 +141,11 @@ func main() {
 
 Type | Storage (Bytes) | Minimum Value Signed |	Minimum Value Unsigned | Maximum Value Signed	| Maximum Value Unsigned
 --- | --- | --- | --- | --- | ---
-TINYINT |	1 |	-128 | 0 | 127 | 255
-SMALLINT |	2 |	-32768 |	0 |	32767 |	65535
-MEDIUMINT |	3 |	-8388608 |	0 |	8388607 |	16777215
-INT |	4 |	-2147483648 |	0 |	2147483647 |	4294967295
-BIGINT |	8 |	-2 63 |	0 |	2 63-1 |	2 64-1
+TINYINT | 1 | -128 | 0 | 127 | 255
+SMALLINT |	2 |	-32768 | 0 | 32767 | 65535
+MEDIUMINT |	3 |	-8388608 | 0 | 8388607 | 16777215
+INT | 4 | -2147483648 | 0 | 2147483647 | 4294967295
+BIGINT | 8 | -2^63 | 0 | 2^63-1 | 2^64-1
 
 ## [MyBatis Generator](http://www.mybatis.org/generator/index.html)
 
