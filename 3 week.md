@@ -68,6 +68,19 @@ func dfs2(node *TreeNode, level int) {
 	}
 }
 
+// solution 3, reference https://leetcode.com/problems/maximum-depth-of-binary-tree/discuss/34216/Simple-solution-using-Java
+func maxDepth2(root *TreeNode) int {
+	if root == nil {
+		return 0
+	}
+    l := maxDepth(root.Left)
+    r := maxDepth(root.Right)
+    if l > r {
+        return 1 + l
+    }
+    return 1 + r
+}
+
 func main() {
 	n2 := &TreeNode{2, &TreeNode{7, nil, nil}, &TreeNode{4, nil, nil}}
 	n5 := &TreeNode{5, &TreeNode{6, nil, nil}, n2}
