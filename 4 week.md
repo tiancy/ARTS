@@ -15,3 +15,15 @@ FROM
 WHERE
     id = 4
 ```
+
+## spring @RequestBody
+
+```Java
+@RequestMapping("/list")
+public List<Object> list(@RequestBody Object obj) {
+    // data...
+    return null;
+}
+```
+Headers Content-Type=application/json <br/>
+Body {}, then request params is null, if it were otherwise, would be error HttpMessageNotReadableException: Required request body is missing
