@@ -27,3 +27,7 @@ public List<Object> list(@RequestBody Object obj) {
 ```
 Headers Content-Type=application/json <br/>
 Body {}, then request params is null, if it were otherwise, would be error HttpMessageNotReadableException: Required request body is missing
+
+## set terminal color
+export PS1="\[\e[30;1m\]\u@\h:\w\$\[\e[m\] "
+alias ls='ls -G'
