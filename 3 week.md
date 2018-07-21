@@ -91,6 +91,19 @@ func main() {
 }
 ```
 
+# Review
+
+## [5-Hour Rule](https://medium.com/the-mission/the-5-hour-rule-if-youre-not-spending-5-hours-per-week-learning-you-re-being-irresponsible-791c3f18f5e6?from=message&isappinstalled=0)
+
+**“Intellectual capital will always trump financial capital.”** — Paul Tudor Jones, self-made billionaire entrepreneur, investor, and philanthropist
+
+knowledge is the new money.But, unlike money, when you use knowledge or give it away, you don’t lose it. 
+
+Working hard is the industrial era approach to getting ahead. **Learning hard is the knowledge economy equivalent.**
+
+Don’t be lazy. Don’t make excuses. Just get it done.
+“Live as if you were to die tomorrow. Learn as if you were to live forever.” — Mahatma Gandhi
+
 # Tip
 
 ### [spring-boot hotswapping](https://docs.spring.io/spring-boot/docs/current/reference/html/howto-hotswapping.html)
