@@ -104,6 +104,14 @@ public List<Object> list(@RequestBody Object obj) {
 Headers Content-Type=application/json <br/>
 Body {}, then request params is null, if it were otherwise, would be error HttpMessageNotReadableException: Required request body is missing
 
+## [srping @RestController](https://spring.io/guides/gs/rest-service-cors/#_create_a_resource_controller)
+
+A key difference between a traditional MVC controller and the RESTful web service controller is the way that the HTTP response body is created. Rather than relying on a view technology to perform server-side rendering of the greeting data to HTML, this RESTful web service controller simply populates and returns a Greeting object. The object data will be written directly to the HTTP response as JSON.
+
+To accomplish this, the @ResponseBody annotation on the greeting() method tells Spring MVC that it does not need to render the greeting object through a server-side view layer, but that instead the greeting object returned is the response body, and should be written out directly.
+
+The Greeting object must be converted to JSON. Thanks to Spring’s HTTP message converter support, you don’t need to do this conversion manually. Because Jackson is on the classpath, Spring’s MappingJackson2HttpMessageConverter is automatically chosen to convert the Greeting instance to JSON.
+
 ## set terminal color
 
 export PS1="\[\e[30;1m\]\u@\h:\w\$\[\e[m\] " <br/>
