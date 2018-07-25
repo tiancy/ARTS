@@ -9,3 +9,36 @@ Normally you would add `@EnableWebMvc` for a Spring MVC app, but Spring Boot add
 * `@ComponentScan` tells Spring to look for other components, configurations, and services in the same package, allowing it to find the controllers.
 
 The main() method uses Spring Boot’s SpringApplication.run() method to launch an application. Did you notice that there wasn’t a single line of XML? No web.xml file either. This web application is 100% pure Java and you didn’t have to deal with configuring any plumbing or infrastructure.
+
+## [Cross-Origin Resource Sharing (CORS)](https://spring.io/guides/gs/rest-service-cors/#_enabling_cors)
+[blog post](https://spring.io/blog/2015/06/08/cors-support-in-spring-framework)<br/>
+Cross-Origin Resource Sharing (CORS) is a technique for relaxing the same-origin policy, allowing Javascript on a web page to consume a REST API served from a different origin.
+
+### Enabling CORS
+
+* Controller method CORS configuration
+
+@CrossOrigin(origins = "http://google.com")
+
+* Global CORS configuration
+
+```Java
+@Configuration
+public class MyConfiguration {
+
+    @Bean
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurerAdapter() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**")
+                  .allowedOrigins("http://example.com")
+                  .allowedMethods("PUT", "DELETE")
+                  .allowedHeaders("header1", "header2", "header3")
+                  .exposedHeaders("header1", "header2")
+                  .allowCredentials(false).maxAge(3600);
+            }
+        };
+    }
+}
+```
