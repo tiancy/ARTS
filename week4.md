@@ -74,6 +74,27 @@ func main() {
 }
 ```
 
+# Review
+
+## Why Being A Modern Polymath Is The New Normal
+
+“Study the science of art. Study the art of science. Develop your senses — especially learn how to see. Realize that everything connects to everything else.” — Leonardo Da Vinci
+
+Being a polymath instead of a specialist is an advantage, not a weakness.
+
+If you want something extraordinary [in life], you have two paths:
+1. Become the best at one specific thing.
+2. Become very good (top 25%) at two or more things.
+
+The first strategy is difficult to the point of near impossibility. Few people will ever play in the NBA or make a platinum album. I don’t recommend anyone even try.
+
+The second strategy is fairly easy. Everyone has at least a few areas in which they could be in the top 25% with some effort. 
+
+“In order to get into the top of the performance distribution, you have to escape from the crowd.” — Howard Marks, founder of Oaktree Capital 
+
+“You can’t make money agreeing with the consensus view.” — Ray Dalio
+
+
 # Tip
 
 ## [RANKING IN MYSQL RESULTS](https://stackoverflow.com/questions/2520357/mysql-get-row-number-on-select)
