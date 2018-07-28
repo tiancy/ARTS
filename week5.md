@@ -25,6 +25,16 @@ Problem solved I resolved this issue by clearing the workspace cache in VS code.
 Table data export for insert on the Navicat,  then create temp same table,  execute insert,
 data export for temp table to csv by your want, data import csv, configure import settings
 
+## [Difference between decimal, float and double](https://stackoverflow.com/questions/618535/difference-between-decimal-float-and-double-in-net)
+
+* float and double are floating binary point types.
+* decimal is a floating decimal point type. 
+
+As for what to use when:
+
+* For values which are "naturally exact decimals" 
+* For values which are more artefacts of nature which can't really be measured exactly anyway, float/double are more appropriate. 
+
 # Share
 
 ## [Cross-Origin Resource Sharing (CORS)](https://spring.io/guides/gs/rest-service-cors/#_enabling_cors)
