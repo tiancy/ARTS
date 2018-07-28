@@ -20,6 +20,11 @@ MacOS : $HOME/Library/Application Support/Code[ - Variant]/User/workspaceStorage
 Build failed, do you want to continue?
 Problem solved I resolved this issue by clearing the workspace cache in VS code.
 
+## Mysql table data import
+
+Table data export for insert on the Navicat,  then create temp same table,  execute insert,
+data export for temp table to csv by your want, data import csv, configure import settings
+
 # Share
 
 ## [Cross-Origin Resource Sharing (CORS)](https://spring.io/guides/gs/rest-service-cors/#_enabling_cors)
