@@ -1,3 +1,15 @@
 # Tip
 
-Spring boot return html, annotated class is a "Controller", is not "RestController"
+## [safe update mode by mysql](https://stackoverflow.com/questions/11448068/mysql-error-code-1175-during-update-in-mysql-workbench)
+
+Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+
+Fixed Error
+
+Try:
+
+SET SQL_SAFE_UPDATES = 0;
+
+Or you can modify your query to follow the rule (use primary key in where clause).
+
+## Spring boot return html, annotated class is a "Controller", is not "RestController"
