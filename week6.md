@@ -13,3 +13,12 @@ SET SQL_SAFE_UPDATES = 0;
 Or you can modify your query to follow the rule (use primary key in where clause).
 
 ## Spring boot return html, annotated class is a "Controller", is not "RestController"
+
+## [Monotonic Clocks by Go](https://golang.google.cn/pkg/time/#hdr-Monotonic_Clocks)
+
+```Go
+start := time.Now()
+... operation that takes 20 milliseconds ...
+t := time.Now()
+elapsed := t.Sub(start)
+```
