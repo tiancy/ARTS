@@ -22,3 +22,18 @@ start := time.Now()
 t := time.Now()
 elapsed := t.Sub(start)
 ```
+
+## vscode snippets
+
+Preferences -> User snippets
+```Json
+// Example:
+"Print to console": {
+  "prefix": "log",
+  "body": [
+    "console.log('$1');",
+    "$2"
+  ],
+  "description": "Log output to console"
+}
+```
