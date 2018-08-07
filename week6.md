@@ -23,6 +23,10 @@ t := time.Now()
 elapsed := t.Sub(start)
 ```
 
+## [Go time format](https://stackoverflow.com/questions/20234104/how-to-format-current-time-using-a-yyyymmddhhmmss-format)
+
+time.Now().Format("2006-01-02 15:04:05")
+
 ## vscode snippets
 
 Preferences -> User snippets
