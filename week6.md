@@ -27,6 +27,10 @@ elapsed := t.Sub(start)
 
 time.Now().Format("2006-01-02 15:04:05")
 
+## Convert byte to string by Go
+
+string(byte[:])
+
 ## vscode snippets
 
 Preferences -> User snippets
