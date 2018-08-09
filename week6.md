@@ -14,7 +14,8 @@ Or you can modify your query to follow the rule (use primary key in where clause
 
 ## Spring boot return html, annotated class is a "Controller", is not "RestController"
 
-## [Monotonic Clocks by Go](https://golang.google.cn/pkg/time/#hdr-Monotonic_Clocks)
+## Go
+* [Monotonic Clocks by Go](https://golang.google.cn/pkg/time/#hdr-Monotonic_Clocks)
 
 ```Go
 start := time.Now()
@@ -23,17 +24,21 @@ t := time.Now()
 elapsed := t.Sub(start)
 ```
 
-## [Go time format](https://stackoverflow.com/questions/20234104/how-to-format-current-time-using-a-yyyymmddhhmmss-format)
+* [Go time format](https://stackoverflow.com/questions/20234104/how-to-format-current-time-using-a-yyyymmddhhmmss-format)
 
 time.Now().Format("2006-01-02 15:04:05")
 
-## Convert byte to string by Go
+* Convert byte to string
 
 string(byte[:])
 
-## Convert string to int by Go
+* Convert string to int
 
 strconv.Atoi(s)
+
+* Convert interface to string
+
+fmt.Sprint(...)
 
 ## vscode snippets
 
