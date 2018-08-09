@@ -31,6 +31,10 @@ time.Now().Format("2006-01-02 15:04:05")
 
 string(byte[:])
 
+## Convert string to int by Go
+
+strconv.Atoi(s)
+
 ## vscode snippets
 
 Preferences -> User snippets
