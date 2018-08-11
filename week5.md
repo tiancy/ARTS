@@ -70,9 +70,9 @@ func main() {
 
 # Review
 
-[Escape to the Azores Islands, 1,000 Miles From Land]https://medium.com/s/greatescape/escape-to-the-azores-islands-1-000-miles-from-land-8b4740dc453c
+[Escape to the Azores Islands, 1,000 Miles From Land](https://medium.com/s/greatescape/escape-to-the-azores-islands-1-000-miles-from-land-8b4740dc453c)
 
-Escape to the Azores Islands, I will
+Escape to the Azores Islands, I will...
 
 # Tip
 
