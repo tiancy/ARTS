@@ -40,6 +40,14 @@ strconv.Atoi(s)
 
 fmt.Sprint(...)
 
+* [go mysql](https://github.com/go-sql-driver/mysql/)
+
+```Go
+_ "github.com/go-sql-driver/mysql" //  go get -u github.com/go-sql-driver/mysql
+
+sql.Open("mysql", "user:password@(address:port)/dbname")
+```
+
 ## vscode snippets
 
 Preferences -> User snippets
