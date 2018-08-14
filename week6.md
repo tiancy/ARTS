@@ -14,41 +14,6 @@ Or you can modify your query to follow the rule (use primary key in where clause
 
 ## Spring boot return html, annotated class is a "Controller", is not "RestController"
 
-## Go
-* [Monotonic Clocks by Go](https://golang.google.cn/pkg/time/#hdr-Monotonic_Clocks)
-
-```Go
-start := time.Now()
-... operation that takes 20 milliseconds ...
-t := time.Now()
-elapsed := t.Sub(start)
-```
-
-* [Go time format](https://stackoverflow.com/questions/20234104/how-to-format-current-time-using-a-yyyymmddhhmmss-format)
-
-time.Now().Format("2006-01-02 15:04:05")
-
-* Convert byte to string
-
-string(byte[:])
-
-* Convert string to int
-
-strconv.Atoi(s)
-
-* Convert interface to string
-
-fmt.Sprint(...)<br/>
-interfaceObj.(string)
-
-* [go mysql](https://github.com/go-sql-driver/mysql/)
-
-```Go
-_ "github.com/go-sql-driver/mysql" //  go get -u github.com/go-sql-driver/mysql
-
-sql.Open("mysql", "user:password@(address:port)/dbname")
-```
-
 ## vscode snippets
 
 Preferences -> User snippets
