@@ -19,8 +19,8 @@ string(byte[:])
 strconv.Atoi(s)
 
 // Convert interface to string
-fmt.Sprint(...)
-interfaceObj.(string)
+interfaceObj.(string) // if interfaceObj is nil, runtime error
+fmt.Sprint(interfaceObj)
 
 // [mysql](https://github.com/go-sql-driver/mysql/)
 import _ "github.com/go-sql-driver/mysql" //  go get -u github.com/go-sql-driver/mysql
