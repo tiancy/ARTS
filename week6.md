@@ -28,3 +28,27 @@ Preferences -> User snippets
   "description": "Log output to console"
 }
 ```
+
+# Review
+
+## [OSS CopyFile](https://help.aliyun.com/document_detail/32149.html?spm=a2c4g.11186623.6.765.wZWvY4#拷贝文件)
+
+```Go
+import "github.com/aliyun/aliyun-oss-go-sdk/oss"
+
+client, err := oss.New("Endpoint", "AccessKeyId", "AccessKeySecret")
+if err != nil {
+    // HandleError(err)
+}
+
+bucket, err := client.Bucket("my-bucket")
+if err != nil {
+    // HandleError(err)
+}
+
+// oss file path
+_, err = bucket.CopyObject("my-object", "descObjectKey")
+if err != nil {
+    // HandleError(err)
+}
+```
