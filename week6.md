@@ -38,7 +38,8 @@ strconv.Atoi(s)
 
 * Convert interface to string
 
-fmt.Sprint(...)
+fmt.Sprint(...)<br/>
+interfaceObj.(string)
 
 * [go mysql](https://github.com/go-sql-driver/mysql/)
 
