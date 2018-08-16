@@ -52,3 +52,25 @@ if err != nil {
     // HandleError(err)
 }
 ```
+
+## [OSS UploadFile](https://help.aliyun.com/document_detail/32147.html?spm=a2c4g.11186623.6.764.51sVYM#简单上传)
+
+```Go
+import "github.com/aliyun/aliyun-oss-go-sdk/oss"
+
+client, err := oss.New("Endpoint", "AccessKeyId", "AccessKeySecret")
+if err != nil {
+    // HandleError(err)
+}
+
+bucket, err := client.Bucket("my-bucket")
+if err != nil {
+    // HandleError(err)
+}
+
+err = bucket.PutObjectFromFile("<yourObjectName>", "<yourLocalFile>")
+if err != nil {
+    fmt.Println("Error:", err)
+    os.Exit(-1)
+}
+```
