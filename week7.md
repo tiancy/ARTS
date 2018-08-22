@@ -39,7 +39,7 @@ str[strings.LastIndex(str, ","):]
 ```Go
 import (
   sc "golang.org/x/text/encoding/simplifiedchinese"
-     "golang.org/x/text/transform"
+  "golang.org/x/text/transform"
 )
 
 file, err := os.Open("filepath")
