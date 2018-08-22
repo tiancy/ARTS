@@ -15,6 +15,9 @@ time.Now().Format("2006-01-02 15:04:05")
 // Convert byte to string
 string(byte[:])
 
+// Convert string to byte
+[]byte(str)
+
 // Convert string to int
 strconv.Atoi(s)
 
