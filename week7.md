@@ -33,3 +33,36 @@ sql.Open("mysql", "user:password@(address:port)/dbname")
 // string to substring
 str[strings.LastIndex(str, ","):]
 ```
+
+## Go read file lines from GBK encoding convert to UTF-8
+
+```Go
+import (
+  sc "golang.org/x/text/encoding/simplifiedchinese"
+	"golang.org/x/text/transform"
+)
+
+file, err := os.Open("filepath")
+if err != nil {
+  log.Fatal(err)
+}
+defer file.Close()
+
+scanner := bufio.NewScanner(file)
+
+for scanner.Scan() {
+  text := bytes.NewBufferString(scanner.Text())
+  ntext := transform.NewReader(text, sc.GBK.NewDecoder())
+  str, err := ioutil.ReadAll(ntext)
+  if err != nil {
+    log.Fatal(err)
+  }
+
+  fmt.Print("%s\n", bytes.NewBuffer(str))
+}
+```
+
+[Reference](https://golang.org/pkg/bufio/#example_Scanner_lines)
+
+[Reference](https://gist.github.com/zhangbaohe/c691e1da5bbdc7f41ca5)
+
