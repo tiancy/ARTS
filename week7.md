@@ -58,7 +58,7 @@ for scanner.Scan() {
     log.Fatal(err)
   }
 
-  fmt.Print("%s\n", bytes.NewBuffer(str))
+  fmt.Printf("%s\n", string(str[:]))
 }
 ```
 
