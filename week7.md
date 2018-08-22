@@ -21,7 +21,8 @@ buf.ReadFrom(Reader)
 buf.String()
 
 // Convert byte to string
-string(byte[:])
+//string(byte[:])
+string(byte)
 
 // Convert string to byte
 []byte(str)
