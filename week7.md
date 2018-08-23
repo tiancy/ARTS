@@ -72,7 +72,25 @@ for scanner.Scan() {
 }
 ```
 
-[Reference](https://golang.org/pkg/bufio/#example_Scanner_lines)
+References
 
-[Reference](https://gist.github.com/zhangbaohe/c691e1da5bbdc7f41ca5)
+[https://golang.org/pkg/bufio/#example_Scanner_lines](https://golang.org/pkg/bufio/#example_Scanner_lines)
 
+[https://gist.github.com/zhangbaohe/c691e1da5bbdc7f41ca5](https://gist.github.com/zhangbaohe/c691e1da5bbdc7f41ca5)
+
+## Go json marshal
+
+```Go
+// Escape HTML in data, "<br/>" --> "\u003cbr/\u003e"
+json.Marshal(data)
+
+// It is not escape HTML in data,  "<br/>" --> "<br/>"
+var buf bytes.Buffer
+e := json.NewEncoder(&buf)
+e.SetEscapeHTML(false)
+e.Encode(data)
+
+fmt.Println(buf.String())
+```
+
+Reference [https://play.golang.org/p/OG-LA9XTmAm](https://play.golang.org/p/OG-LA9XTmAm)
