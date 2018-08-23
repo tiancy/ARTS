@@ -14,6 +14,8 @@ Or you can modify your query to follow the rule (use primary key in where clause
 
 ## Spring boot return html, annotated class is a "Controller", is not "RestController"
 
+## Do not change property in the object getting, because insert data use getting, maybe it’s not you want
+
 ## vscode snippets
 
 Preferences -> User snippets
