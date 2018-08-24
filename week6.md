@@ -61,6 +61,52 @@ func main() {}
 
 ```
 
+# Review
+
+[In-depth introduction to bufio.Scanner in Golang](https://medium.com/golangspec/in-depth-introduction-to-bufio-scanner-in-golang-55483bb689b4)
+
+* For writes it’s done by temporary storing data before transmitting it further (like disk or socket). Data is stored till certain size is reached. This way less write actions are triggered.
+* For reads it means retrieving more data during single operation. It also reduces number of sycalls.
+
+* string or slice of bytes then first check utilities like bytes.Split, strings.Split.
+
+```Go
+input := "abcdefghijklmn"
+scanner := bufio.NewScanner(strings.NewReader(input))
+
+// pre-defined split function
+split := func(data []byte, atEOF bool) (advance int, token []byte, err error) {
+
+    fmt.Printf("%t\t%d\t%s\n", atEOF, len(data), data)
+
+    // end read
+    if len(data) == 0 {
+        // Both io.EOF and ErrFinalToken aren’t considered to be “true” errors — Err method will return nil if any of these two caused scanner to stop.
+        return 0, []byte{'e', 'n', 'd'}, bufio.ErrFinalToken
+    }
+
+    if atEOF {
+        return 0, nil, errors.New("bad luck")
+    }
+
+    return 2, data[:2], nil
+}
+scanner.Split(split)
+
+// Maximum token size / ErrTooLong  (64 * 1024)
+// Program prints bufio.Scanner: token too long
+// input := strings.Repeat("x", bufio.MaxScanTokenSize)
+buf := make([]byte, 20)
+scanner.Buffer(buf, 2) // If buffer is full then will double it before any reading.
+
+for scanner.Scan() {
+    fmt.Printf("%s\n", scanner.Text())
+}
+if scanner.Err() != nil {
+    fmt.Printf("error: %s\n", scanner.Err())
+}
+```
+
 # Tip
 
 ## [safe update mode by mysql](https://stackoverflow.com/questions/11448068/mysql-error-code-1175-during-update-in-mysql-workbench)
@@ -94,7 +140,7 @@ Preferences -> User snippets
 }
 ```
 
-# Review
+# Share
 
 ## [OSS CopyFile](https://help.aliyun.com/document_detail/32149.html?spm=a2c4g.11186623.6.765.wZWvY4#拷贝文件)
 
