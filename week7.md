@@ -98,3 +98,15 @@ fmt.Println(buf.String())
 ```
 
 Reference [https://play.golang.org/p/OG-LA9XTmAm](https://play.golang.org/p/OG-LA9XTmAm)
+
+# Share
+
+## 重复问题数据
+
+前端发现数据出现重复问题，前一页和后一页， 怀疑后端接口有问题
+
+解决问题思路
+1. 查看数据有无重复数据
+2. 怀疑分页插件有问题，是否用了无序列表
+3. 根据排序字段查看数据，发现排序自段的数据一样，结果导致每次返回的数据顺序不一致
+4. 增加排序字段ID，问题解决
