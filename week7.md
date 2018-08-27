@@ -101,7 +101,7 @@ Reference [https://play.golang.org/p/OG-LA9XTmAm](https://play.golang.org/p/OG-L
 
 # Share
 
-## 重复问题数据
+## 重复数据问题
 
 前端发现数据出现重复问题，前一页和后一页， 怀疑后端接口有问题
 
