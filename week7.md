@@ -1,3 +1,35 @@
+# Review
+
+## [Java String to InputStream]https://www.baeldung.com/convert-string-to-input-stream
+
+* Convert with Plain Java
+
+```Java
+String initialString = "text";
+InputStream in = new ByteArrayInputStream(initialString.getBytes());
+...
+in.close();
+}
+```
+
+* Convert with Guava
+
+```Java
+String initialString = "text";
+InputStream in = new ReaderInputStream(CharSource.wrap(initialString).openStream());
+...
+in.close();
+```
+
+* Convert with Commons IO
+
+```Java
+String initialString = "text";
+InputStream in = IOUtils.toInputStream(initialString);
+...
+in.close();
+```
+
 # Tip
 
 ## Go
