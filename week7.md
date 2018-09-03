@@ -141,6 +141,8 @@ cmd := exec.Command("/usr/local/bin/ffmpeg", "-i", inputUrl, "-ss", soundBegin, 
 cmd.run()
 ```
 
+[ffmpeg](https://www.ffmpeg.org/ffmpeg.html#Automatic-stream-selection)
+
 # Share
 
 ## 重复数据问题
