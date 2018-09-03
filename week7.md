@@ -78,6 +78,9 @@ str[strings.LastIndex(str, ","):]
 // string replace
 // Replace returns a copy of the string s with the first n non-overlapping instances of old replaced by new. If old is empty, it matches at the beginning of the string and after each UTF-8 sequence, yielding up to k+1 replacements for a k-rune string. If n < 0, there is no limit on the number of replacements.
 strings.Replace(s, old, new, n)
+
+// TrimSpace returns a slice of the string s, with all leading and trailing white space removed, as defined by Unicode.
+strings.TrimSpace(" \t\n Hello, Gophers \n\t\r\n")
 ```
 
 ## Go read file lines from GBK encoding convert to UTF-8
@@ -130,6 +133,13 @@ fmt.Println(buf.String())
 ```
 
 Reference [https://play.golang.org/p/OG-LA9XTmAm](https://play.golang.org/p/OG-LA9XTmAm)
+
+## Go exec runs external commands for ffmpeg
+
+```Go
+cmd := exec.Command("/usr/local/bin/ffmpeg", "-i", inputUrl, "-ss", soundBegin, "-to", soundEnd, outputUrl)
+cmd.run()
+```
 
 # Share
 
