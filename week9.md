@@ -7,6 +7,13 @@ re := regexp.MustCompile("guys")
 re.ReplaceAllString("hi guys", "boy") // return hi boy
 ```
 
+## [Go remove and mkdir](https://golang.google.cn/pkg/os/#Mkdir)
+
+```Go
+os.RemoveAll("temp")
+os.Mkdir("temp", os.ModePerm)
+```
+  
 ## Java Regexp Replace
 
 ```Java
