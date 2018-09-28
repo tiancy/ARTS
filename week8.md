@@ -39,7 +39,13 @@ if err != nil {
 }
 defer f.Close()
 
+// just write file
 log.SetOutput(f)
+
+// write file and stdout
+w := io.MultiWriter(os.Stdout, f)
+log.SetOutput(w)
+
 log.Println("This is a test log entry")
 ```
 references
