@@ -25,3 +25,16 @@ os.Mkdir("temp", os.ModePerm)
 ```Java
 CharMatcher.anyOf(",").trimFrom(",a,b,,c,) // return a,b,,c
 ```
+
+# Share
+
+## [ajaxSubmit](http://jquery.malsup.com/form/#options-object)
+
+Empty file input elements are not handled correctly in ajaxSubmit, the empty element while ajaxSubmit() is missing Content-Type, server MultipartFile is null
+
+solution add option
+iframe: true
+
+iframe
+Boolean flag indicating whether the form should always target the server response to an iframe. This is useful in conjuction with file uploads. See the File Uploads documentation on the Code Samples page for more info. 
+Default value: false
