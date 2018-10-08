@@ -26,6 +26,13 @@ os.Mkdir("temp", os.ModePerm)
 CharMatcher.anyOf(",").trimFrom(",a,b,,c,) // return a,b,,c
 ```
 
+## simplemde set value
+
+```javascript
+simplemde.value(text);
+setTimeout(function() { simplemde.codemirror.refresh(); }, 2000);
+```
+
 # Share
 
 ## [ajaxSubmit](http://jquery.malsup.com/form/#options-object)
