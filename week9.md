@@ -26,11 +26,26 @@ os.Mkdir("temp", os.ModePerm)
 CharMatcher.anyOf(",").trimFrom(",a,b,,c,) // return a,b,,c
 ```
 
-## simplemde set value
+## JavaScript
+
+* simplemde set value
 
 ```javascript
 simplemde.value(text);
 setTimeout(function() { simplemde.codemirror.refresh(); }, 2000);
+```
+
+* audio
+
+```javascript
+// set paused
+$('audio').each(function() {
+    this.currentTime = 0;
+    this.pause();
+});
+
+// hide download control
+<audio controlsList="nodownload"></audio>
 ```
 
 # Share
