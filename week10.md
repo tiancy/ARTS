@@ -16,3 +16,9 @@ select
 
 Reference
 [Count with if condition in mysql query](https://stackoverflow.com/questions/9798937/count-with-if-condition-in-mysql-query)
+
+## decompression for jar file at cmd
+ 
+$ unzip filename.jar [-d filepath]
+
+$ jar tvf filename.jar // list for filename.jar
