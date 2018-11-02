@@ -22,3 +22,11 @@ Reference
 $ unzip filename.jar [-d filepath]
 
 $ jar tvf filename.jar // list for filename.jar
+
+## [Searching for Commands in the History](http://www.gnu.org/software/bash/manual/html_node/Searching.html)
+
+C-r
+
+## [Cutting cmd](https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/)
+
+C-u
