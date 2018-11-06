@@ -1,3 +1,30 @@
+# Review
+
+reference https://medium.com/exploring-code/why-should-you-learn-go-f607681fad65
+
+“Go will be the server language of the future.” — Tobias Lütke, Shopify
+
+* Go has goroutines !!
+
+Creating new thread in Java is not memory efficient. As every thread consumes approx 1MB of the memory heap size and eventually if you start spinning thousands of threads, they will put tremendous pressure on the heap and will cause shut down due to out of memory. Also, if you want to communicate between two or more threads, it’s very difficult.
+
+Go has goroutines instead of threads. They consume almost 2KB memory from the heap. So, you can spin millions of goroutines at any time.
+
+* Other benefits are :
+   1. Goroutines have growable segmented stacks. That means they will use more memory only when needed.
+   2. Goroutines have a faster startup time than threads.
+   3. Goroutines come with built-in primitives to communicate safely between themselves (channels).
+   4. Goroutines allow you to avoid having to resort to mutex locking when sharing data structures.  
+   Also, goroutines and OS threads do not have 1:1 mapping. A single goroutine can run on multiple threads. Goroutines are multiplexed into small number of OS threads.
+
+* Go runs directly on underlying hardware.
+
+Go is compiled language. That means performance is almost nearer to lower level languages. It also uses garbage collection to allocation and removal of the object. So, no more malloc() and free() statements!!! Cool!!!
+
+* Code written in Go is easy to maintain.
+
+* Go is backed by Google.
+
 # Technique
 
 ## Convert json to string
