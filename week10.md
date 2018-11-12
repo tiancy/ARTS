@@ -30,3 +30,8 @@ C-r
 ## [Cutting cmd](https://www.howtogeek.com/howto/ubuntu/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/)
 
 C-u
+
+
+## tail -- display the last part of a file
+
+$ tail -f filename.log
