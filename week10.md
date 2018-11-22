@@ -35,3 +35,10 @@ C-u
 ## tail -- display the last part of a file
 
 $ tail -f filename.log
+
+## git commands
+
+git checkout master // switch branch
+
+git reset --soft HEAD^ // Undo a commit  
+Refer to https://git-scm.com/docs/git-reset#git-reset-Undoacommitandredo
