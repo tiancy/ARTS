@@ -17,6 +17,23 @@ select
 Reference
 [Count with if condition in mysql query](https://stackoverflow.com/questions/9798937/count-with-if-condition-in-mysql-query)
 
+## mybatis sql
+
+```SQL
+select name from table where age < 20 // wrong
+select name from table where age &lt; 20 // right
+```
+
+## mybatis sql allowMultiQueries
+
+jdbc:mysql://localhost:3306/dbname?allowMultiQueries=true
+
+```SQL
+set @now = NOW();
+set @now7 = DATE_ADD(@now, INTERVAL 7 DAY);
+select name from table where endTime > @now AND endTime &lt; @now7;
+```
+
 ## decompression for jar file at cmd
  
 $ unzip filename.jar [-d filepath]
