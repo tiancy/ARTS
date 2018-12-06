@@ -17,6 +17,15 @@ select
 Reference
 [Count with if condition in mysql query](https://stackoverflow.com/questions/9798937/count-with-if-condition-in-mysql-query)
 
+## MySQL JOIN WHERE
+
+```SQL
+select name from tableA
+  left join
+  tableB on tableA.id = tableB.aid where tableB.status = 1
+where tableA.status = 1
+```
+
 ## mybatis sql
 
 ```SQL
