@@ -43,6 +43,17 @@ set @now7 = DATE_ADD(@now, INTERVAL 7 DAY);
 select name from table where endTime > @now AND endTime &lt; @now7;
 ```
 
+## mybatis multi param
+
+```
+// mapper interface
+List<Object> getList(@Param(value = "status") int status, @Param(value = "pager") Pager pager);
+
+// mapper xml
+// remove the parameterType
+select * from table where status=#{status} limit #{pager.index}, #{pager.size}
+```
+
 ## decompression for jar file at cmd
  
 $ unzip filename.jar [-d filepath]
