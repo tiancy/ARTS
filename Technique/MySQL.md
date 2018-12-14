@@ -33,3 +33,72 @@ and when you utterly interested in performance - use utf8_general_ci
 
 ## force index
 select id from table force index(PRI/index)
+
+## [RANKING IN MYSQL RESULTS](https://stackoverflow.com/questions/2520357/mysql-get-row-number-on-select)
+```SQL
+SELECT 
+    rank
+FROM
+    (SELECT 
+        @rank:=@rank + 1 AS rank, id
+    FROM
+        table_name t, (SELECT @rank:=0) r
+    WHERE
+         `order` >= (select `order` from table_name where id = 4) -- exclude id =4 after data
+    ORDER BY `order` DESC) tmp
+WHERE
+    id = 4
+```
+
+## Mysql table data import
+
+Table data export for insert on the Navicat,  then create temp same table,  execute insert,
+data export for temp table to csv by your want, data import csv, configure import settings
+
+## [safe update mode by mysql](https://stackoverflow.com/questions/11448068/mysql-error-code-1175-during-update-in-mysql-workbench)
+
+Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+
+Fixed Error
+
+Try:
+
+SET SQL_SAFE_UPDATES = 0;
+
+Or you can modify your query to follow the rule (use primary key in where clause).
+
+## [Mysql DISTINCT](https://dev.mysql.com/doc/refman/8.0/en/distinct-optimization.html)
+
+```sql
+SELECT DISTINCT t.a FROM t;
+```
+
+## [Mysql EXPLAIN](https://dev.mysql.com/doc/refman/8.0/en/explain.html)
+
+The DESCRIBE and EXPLAIN statements are synonyms. In practice, the DESCRIBE keyword is more often used to obtain information about table structure, whereas EXPLAIN is used to obtain a query execution plan (that is, an explanation of how MySQL would execute a query).
+
+## Count with if condition in mysql query
+
+use sum() in place of count()
+
+```SQL
+select
+  a.id
+  sum(if(b.status=0,1,0)) as numcount
+ from a
+  left join b on a.id = b.id
+ where a.status = 0
+ group by a.id
+```
+
+Reference
+[Count with if condition in mysql query](https://stackoverflow.com/questions/9798937/count-with-if-condition-in-mysql-query)
+
+## MySQL JOIN WHERE
+
+```SQL
+select name from tableA
+  left join
+  tableB on tableA.id = tableB.aid where tableB.status = 1
+where tableA.status = 1
+```
