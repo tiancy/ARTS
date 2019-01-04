@@ -97,8 +97,15 @@ Reference
 ## MySQL JOIN WHERE
 
 ```SQL
+-- tableA all data
 select name from tableA
   left join
-  tableB on tableA.id = tableB.aid where tableB.status = 1
+  tableB on tableA.id = tableB.aid and tableB.status = 1
 where tableA.status = 1
+
+-- tableA all data, but where is tableB.status = 1 (tableB base)
+select name from tableA
+  left join
+  tableB on tableA.id = tableB.aid
+where tableA.status = 1 and tableB.status = 1
 ```
