@@ -97,3 +97,14 @@ https://git-scm.com/docs/git-merge
 lsof -i -P -n | grep LISTEN  
 
 Refer to https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/
+
+# Share
+
+QPS
+
+Query rate" redirects here. It is not to be confused with Query throughput.  
+Queries per second (QPS) is a common measure of the amount of search traffic an information retrieval system, such as a search engine or a database, receives during one second.[1] The term is used more broadly for any request–response system, more correctly called requests per second (RPS).  
+
+High-traffic systems must watch their QPS in order to know when to scale the system to handle more load.
+
+Refer to https://en.wikipedia.org/wiki/Queries_per_second
