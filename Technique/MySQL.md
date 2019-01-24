@@ -34,7 +34,7 @@ and when you utterly interested in performance - use utf8_general_ci
 ## force index
 select id from table force index(PRI/index)
 
-## [RANKING IN MYSQL RESULTS](https://stackoverflow.com/questions/2520357/mysql-get-row-number-on-select)
+## [RANKING IN MySQL RESULTS](https://stackoverflow.com/questions/2520357/mysql-get-row-number-on-select)
 ```SQL
 SELECT 
     rank
@@ -50,7 +50,7 @@ WHERE
     id = 4
 ```
 
-## Mysql table data import
+## MySQL table data import
 
 Table data export for insert on the Navicat,  then create temp same table,  execute insert,
 data export for temp table to csv by your want, data import csv, configure import settings
@@ -67,13 +67,13 @@ SET SQL_SAFE_UPDATES = 0;
 
 Or you can modify your query to follow the rule (use primary key in where clause).
 
-## [Mysql DISTINCT](https://dev.mysql.com/doc/refman/8.0/en/distinct-optimization.html)
+## [MySQL DISTINCT](https://dev.mysql.com/doc/refman/8.0/en/distinct-optimization.html)
 
 ```sql
 SELECT DISTINCT t.a FROM t;
 ```
 
-## [Mysql EXPLAIN](https://dev.mysql.com/doc/refman/8.0/en/explain.html)
+## [MySQL EXPLAIN](https://dev.mysql.com/doc/refman/8.0/en/explain.html)
 
 The DESCRIBE and EXPLAIN statements are synonyms. In practice, the DESCRIBE keyword is more often used to obtain information about table structure, whereas EXPLAIN is used to obtain a query execution plan (that is, an explanation of how MySQL would execute a query).
 
@@ -109,3 +109,29 @@ select name from tableA
   tableB on tableA.id = tableB.aid
 where tableA.status = 1 and tableB.status = 1
 ```
+
+## MySQL limit
+
+```mysql
+-- base
+SELECT 
+    a.*
+FROM
+    t1 a
+LIMIT 1000000 , 20;
+
+-- good
+SELECT 
+    a.*
+FROM
+    t1 a,
+    (SELECT 
+        id
+    FROM
+        t1
+    LIMIT 1000000 , 20) b
+WHERE
+    a.id = b.id;
+```
+
+Refer to https://www.toutiao.com/a6648823317069300228/?tt_from=mobile_qq&utm_campaign=client_share&timestamp=1548288913&app=news_article&utm_source=mobile_qq&iid=58523200744&utm_medium=toutiao_ios&group_id=6648823317069300228
