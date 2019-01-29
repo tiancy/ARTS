@@ -30,3 +30,7 @@ $ tail -f filename.log
 lsof -i -P -n | grep LISTEN  
 
 Refer to https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-command/
+
+## ps -- process status
+
+ps -ef | grep java
