@@ -34,3 +34,19 @@ Refer to https://www.cyberciti.biz/faq/unix-linux-check-if-port-is-in-use-comman
 ## ps -- process status
 
 ps -ef | grep java
+
+## linux chown, chmod
+```
+更改文件属主，也可以同时更改文件属组
+chown [–R] 属主名 文件名
+chown [-R] 属主名：属组名 文件名
+
+$ chown tian tmp.log
+
+r:4
+w:2
+x:1
+$ chmod 770 tmp.log
+
+```
+Refer to https://www.w3cschool.cn/linux/linux-file-attr-permission.html
