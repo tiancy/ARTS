@@ -80,3 +80,5 @@ while ((line = reader.readLine()) != null) {
     sb.append(line);
 }
 ```
+
+Refer to https://stackoverflow.com/questions/2793150/how-to-use-java-net-urlconnection-to-fire-and-handle-http-requests
