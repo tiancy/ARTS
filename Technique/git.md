@@ -11,6 +11,8 @@ git reset --soft HEAD^ // Undo a commit
 git checkout dev  
 git merge master // merge branch master to current branch
 
+git revert HEAD~3
+
 References  
 https://git-scm.com/docs/git-reset#git-reset-Undoacommitandredo  
 https://git-scm.com/docs/git-merge
