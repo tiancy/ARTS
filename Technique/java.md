@@ -3,14 +3,16 @@
 ```Java
 ObjectMapper om = new ObjectMapper();
 try {
-JsonNode node = om.readTree("{\"name\":\"value\"}");
-JsonNode snode = node.get("name");
-if (snode != null) {
-  String name = snode.asText();
+  JsonNode node = om.readTree("{\"name\":\"value\"}");
+  JsonNode snode = node.get("name");
+  if (snode != null) {
+    String name = snode.asText();
+  }
+  
+  // add
+  ((ObjectNode)node).put("name1", "value1");
+} catch (Exception e) {
 }
-
-// add
-((ObjectNode)node).put("name1", "value1");
 ```
 
 ## [Difference between decimal, float and double](https://stackoverflow.com/questions/618535/difference-between-decimal-float-and-double-in-net)
