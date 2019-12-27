@@ -65,3 +65,16 @@ while ((line = reader.readLine()) != null) {
 ```
 
 Refer to https://stackoverflow.com/questions/2793150/how-to-use-java-net-urlconnection-to-fire-and-handle-http-requests
+
+## java Comparator
+
+```java
+class User {
+    private String name;
+}
+
+List<User> users = ...;
+Collections.sort(users, (e1, e2) -> {
+    return e1.name.compareTo(e2.name);
+});
+```
