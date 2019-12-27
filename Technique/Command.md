@@ -23,7 +23,7 @@ C-u
 
 ## tail -- display the last part of a file
 
-$ tail -f filename.log
+$ tail -100f filename.log
 
 ## listening ports
 
@@ -50,3 +50,6 @@ $ chmod 770 tmp.log
 
 ```
 Refer to https://www.w3cschool.cn/linux/linux-file-attr-permission.html
+
+## mvn
+mvn clean install -DskipTests
