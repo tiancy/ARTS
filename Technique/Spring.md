@@ -87,3 +87,34 @@ public class MyConfiguration {
 ```
 
 ## Spring boot return html, annotated class is a "Controller", is not "RestController"
+
+## [Scheduling Tasks](https://spring.io/guides/gs/scheduling-tasks/)
+
+* Create a scheduled task
+
+```java
+@Component
+public class ScheduledTasks {
+
+  private static final Logger log = LoggerFactory.getLogger(ScheduledTasks.class);
+
+  private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
+
+  @Scheduled(fixedRate = 5000)
+  public void reportCurrentTime() {
+    log.info("The time is now {}", dateFormat.format(new Date()));
+  }
+}
+```
+ * Enable Scheduling
+ 
+ ```java
+@SpringBootApplication
+@EnableScheduling
+public class Application {
+
+  public static void main(String[] args) {
+    SpringApplication.run(Application.class);
+  }
+}
+ ```
