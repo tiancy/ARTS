@@ -21,6 +21,9 @@ C-r
 
 C-u
 
+## logout ssh
+C-d
+
 ## tail -- display the last part of a file
 
 $ tail -100f filename.log
