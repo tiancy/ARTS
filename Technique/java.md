@@ -75,6 +75,7 @@ class User {
 
 List<User> users = ...;
 Collections.sort(users, (e1, e2) -> {
-    return e1.name.compareTo(e2.name);
+    // return e1.name.compareTo(e2.name);
+    return e2.name.length() - e1.name.length();
 });
 ```
