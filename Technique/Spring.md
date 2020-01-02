@@ -118,3 +118,15 @@ public class Application {
   }
 }
  ```
+
+* Cron expression
+
+A Cron expression consists of six sequential fields  
+second, minute, hour, day of month, month, day(s) of week
+
+// run every morning at 6 AM  
+@Scheduled(cron = "0 0 6 * * ?")
+
+References  
+https://riptutorial.com/spring/example/21209/cron-expression  
+https://stackoverflow.com/questions/26147044/spring-cron-expression-for-every-day-101am
