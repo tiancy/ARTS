@@ -79,3 +79,11 @@ Collections.sort(users, (e1, e2) -> {
     return e2.name.length() - e1.name.length();
 });
 ```
+
+## java double colon ::
+
+```
+<Class name>::<method name>
+```
+
+Refer to https://www.geeksforgeeks.org/double-colon-operator-in-java/
