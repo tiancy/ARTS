@@ -56,3 +56,9 @@ Refer to https://www.w3cschool.cn/linux/linux-file-attr-permission.html
 
 ## mvn
 mvn clean install -DskipTests
+
+## linux whereis/which
+
+whereis java
+
+Refer to https://www.computerhope.com/unix/uwhereis.htm
