@@ -1,3 +1,9 @@
+## [Determining the Default Version of the JDK](https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html#A1096875)
+
+To run a different version of Java, either specify the full path, or use the java_home tool:
+
+% /usr/libexec/java_home -v 1.8.0_06 --exec javac -version
+
 ## Java string convert to json
 
 ```Java
