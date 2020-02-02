@@ -57,8 +57,17 @@ Refer to https://www.w3cschool.cn/linux/linux-file-attr-permission.html
 ## mvn
 mvn clean install -DskipTests
 
-## linux whereis/which
+## linux whereis/which, 查看安装目录
 
 whereis java
 
 Refer to https://www.computerhope.com/unix/uwhereis.htm
+
+## Sed
+
+Sed是Stream EDitor的缩写，是Unix下常用的基于文件和管道的编辑工具，可以在手册中得到关于sed的详细信息。
+编辑并不会改变源文件，sed只是处理源文件的每一行并 把结果显示在标准输出中（当然很容易使用重定向来定制）：
+
+* sed ’s/^$/d’ file.go 删除所有空行
+* sed ’s/^[ ]*$/d’ file.go 删除所有只包含空格或者制表符的行
+* sed ’s/”//g’ file.go 删除所有引号
