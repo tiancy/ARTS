@@ -16,3 +16,5 @@ git revert HEAD~3
 References  
 https://git-scm.com/docs/git-reset#git-reset-Undoacommitandredo  
 https://git-scm.com/docs/git-merge
+
+## git config --list
